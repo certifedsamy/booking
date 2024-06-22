@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.swiper-button-next,
+.swiper-button-prev {
+  background-color: #2bd2a4;
+  padding: 16px 22px;
+  border-radius: 100%;
+  color: white;
+  background-image: url("/src/assets/icons/arrow.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.swiper-button-next {
+  margin-right: 15px;
+}
+.swiper-button-prev {
+  rotate: 180deg;
+  margin-left: 15px;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  content: "";
+}
+
+.image_wrapper {
+  margin: 0px 100px;
+}
+.image_wrapper img {
+  width: 80%;
+}
